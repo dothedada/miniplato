@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+:root {
+    --txt: #050315;
+    --bkg: #fbfbfe;
+    --bkg-alpha: #fbfbfede;
+    --primary: #00e0ff;
+    --accent: #2f27ce;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+h1, h2, h3, strong, b {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: var(--txt);
+    font-size: 1rem;
+}
+ul {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    background-color: var(--primary);
+    color: var(--txt);
+    display: grid;
+    grid-template-columns: clamp(300px, 100%, 500px);
+    grid-template-rows: 100px max-content 100px;
+    place-content: center;
+    padding: 1rem;
+}
+
+header {
+    margin: 0 1rem 0.5rem;
+    align-self: end;
+}
+
+nav {
+    margin: 0 1rem;
+}
+nav ul {
+    align-items: flex-start;
+    display: flex;
+    gap: 1rem;
+}
+nav li {
+    width: max-content;
+}
+nav li:last-child {
+    margin: 0 0 0 auto;
+}
+button {
+    font-family: inherit;
+    font-weight: 700;
+    background: none;
+    border: none;
+    font-size: 0.75rem;
+    padding: 0.5rem 0.2rem;
+}
+button:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+nav .logo {
+    width: 60px;
+    margin: 0.2rem 0;
+    fill: var(--accent);
+}
+
+#contenido {
+    aspect-ratio: 1;
+    border: solid 1rem var(--bkg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('assets/minimini-texture.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+#contenido .logo {
+    width: 80%;
+}
+#contenido aside {
+    background-color: var(--bkg-alpha);
+    width: 50%;
+    margin: 0 0 0 auto;
+    padding: 0 1rem;
+    height: 100%;
+
+}
+#contenido ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#contenido button {
+    font-size: 1rem;
+    padding: 0;
+}

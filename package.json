@@ -2,10 +2,9 @@
     "name": "miniplato",
     "version": "1.0.0",
     "description": "",
-    "private": true,
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack"
+        "dev": "webpack serve --mode=development",
+        "build": "webpack --mode=production"
     },
     "keywords": [],
     "author": "Miguel Mejía <info@mmejia.com>",
@@ -15,6 +14,7 @@
         "html-webpack-plugin": "^5.6.0",
         "style-loader": "^3.3.4",
         "webpack": "^5.90.1",
-        "webpack-cli": "^5.1.4"
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.0"
     }
 }

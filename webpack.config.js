@@ -8,6 +8,13 @@ module.exports = {
         filename: 'main.js',
         clean: true,
     },
+    devtool: 'inline-source-map',
+    devServer: {
+        static: './dist',
+        client: {
+            overlay: true,
+        },
+    },
     module: {
         rules: [
             {
@@ -18,8 +25,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'mini-mini restaurante',
-            template: './src/index.html',
+            template: 'src/index.html',
             inject: 'body',
         }),
     ],
