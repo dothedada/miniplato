@@ -64,15 +64,27 @@ button {
     border: none;
     font-size: 0.75rem;
     padding: 0.5rem 0.2rem;
+    cursor: pointer;
 }
 button:hover {
     color: var(--accent);
     text-decoration: underline;
 }
+button.activo:hover, .activo {
+    color: var(--bkg);
+    text-decoration: none;
+    cursor: unset;
+}
+
 nav .logo {
     width: 60px;
     margin: 0.2rem 0;
     fill: var(--accent);
+}
+path:hover,
+rect:hover {
+    fill: var(--bkg);
+    transition: fill 0.2s ease;
 }
 
 #contenido {
@@ -81,11 +93,6 @@ nav .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('assets/minimini-texture.svg');
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
 }
 #contenido .logo {
     width: 80%;
@@ -108,4 +115,8 @@ nav .logo {
 #contenido button {
     font-size: 1rem;
     padding: 0;
+}
+
+.hidden {
+    display: none;
 }

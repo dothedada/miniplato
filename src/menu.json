@@ -1,0 +1,37 @@
+{
+    "Lunes": {
+        "plate": "Ensalada mediterranea",
+        "desc": "Ensalada de tomate, pepino, pimiento, cebolla roja y aceitunas con vinagreta de limón.",
+        "img": "./assets/lunes.jpg"
+    },
+    "Martes": {
+        "plate": "Paella",
+        "desc": "Paella vegetariana con verduras de temporada.",
+        "img": "./assets/martes.jpg"
+    },
+    "Miércoles": {
+        "plate": "Calabacines rellenos",
+        "desc": "Calabacines rellenos de quinoa, champiñones y tomate.",
+        "img": "./assets/miercoles.jpg"
+    },
+    "Jueves": {
+        "plate": "Pizza",
+        "desc": "Pizza casera con base de masa integral, tomate, mozzarella, champiñones, espinacas y aceitunas.",
+        "img": "./assets/jueves.jpg"
+    },
+    "Viernes": {
+        "plate": "Risotto de setas",
+        "desc": "Risotto de setas con queso parmesano y perejil fresco.",
+        "img": "./assets/viernes.jpg"
+    },
+    "Sábado": {
+        "plate": "Lo sentimos, no abrimos los sábados",
+        "desc": "",
+        "img": "./assets/sabado.jpg"
+    },
+    "Domingo": {
+        "plate": "Lo sentimos, no abrimos los domingo",
+        "desc": "",
+        "img": "./assets/domingo.jpg"
+    }
+}
