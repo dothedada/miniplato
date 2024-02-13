@@ -1,0 +1,1 @@
+(()=>{"use strict";let e=0;document.querySelector("#tap").addEventListener("click",(function(){console.log(e),e++}))})();
