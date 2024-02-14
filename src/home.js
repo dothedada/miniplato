@@ -1,4 +1,5 @@
 import Logo from './assets/minimini-texture.svg'
+
 const main = () => {
     const info = document.querySelector('header')
     const title = document.createElement('h1')
@@ -15,9 +16,6 @@ const main = () => {
     document.querySelector('#contenido').textContent = ''
     document.querySelector('#contenido').appendChild(miniTexture)
 
-    const navBTN = document.querySelectorAll('nav button')
-    navBTN.forEach(btn => btn.classList.remove('activo'))
-    navBTN[0].classList.add('activo')
 }
 
 export default main
